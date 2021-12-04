@@ -26,7 +26,7 @@ func GetJWT() (string, error) {
 	tokenString, err := token.SignedString(MySigningKey)
 	if err != nil {
 		fmt.Errorf("something went wrong : %s", err.Error())
-		return "", err
+		return "", err 
 
 	}
 
